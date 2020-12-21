@@ -54,6 +54,8 @@ public class LZWEncoder {
                     extend = "" + symbol;
                 }
             }
+            if(!extend.equals(""))
+                encoded_values.add(map.get(extend));
 
             Iterator<Integer> iterator = encoded_values.iterator();
             System.out.println("Input string is: " + input);
